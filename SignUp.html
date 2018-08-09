@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="SignUpStyles.css">
+  </head>
+  <body>
+
+    <form action="/action_page.php">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+    	<label for="fname"><b>First Name</b></label>
+        <input type="text" placeholder="Enter your first name" name="fname" required>
+
+       <label for="lname"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter your last name" name="lname" required>
+
+        <label for="year"><b>Birth Year</b></label>
+        <input type="number" placeholder="xxxx" name="year" required>
+
+       <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="name@example.com" name="email" required>
+
+        <h2>Shipping</h2>
+        <label for="address"><b>Street Address</b></label>
+        <input type="text" placeholder="542 W. 15th Street" name="address" required>
+
+        <label for="city"><b>City</b></label>
+        <input type="text" placeholder="San Francisco" name="city" required>
+
+        <label for="state"><b>State</b></label>
+        <input type="text" placeholder="CA" name="state" required>
+
+        <label for="zip"><b>Zip</b></label>
+        <input type="number" placeholder="10001" name="zip" required>
+
+        <h2>Account Setup</h2>
+     	<label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter username" name="username" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <label for="genre1"><b>Genres of Interest</b></label>
+        <div class="genres">
+          <input type="checkbox" name="genre1" value="Classics"> Classics<br>
+          <input type="checkbox" name="genre2" value="Comics"> Comics<br>
+          <input type="checkbox" name="genre3" value="Fiction"> Fiction<br>
+          <input type="checkbox" name="genre4" value="Mystery"> Mystery<br>
+          <input type="checkbox" name="genre5" value="Nonfiction"> Nonfiction<br>
+          <input type="checkbox" name="genre6" value="Romance"> Romance<br>
+          <input type="checkbox" name="genre7" value="Science Fiction"> Science Fiction<br>
+          <input type="checkbox" name="genre8" value="Young Adult"> Young Adult<br><br>
+        </div>
+
+       <div><p>
+           Will you be donating books?
+            <select id="donate" name="donate">
+            <option value="yes">Yes</option>
+            <option value="no">No</option> </select>
+        </p></div>
+        <div>
+            How many books would you like to receive per month?
+             <select id="receive" name="receive">
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option></select>
+         </div>
+
+      <h2>Payment</h2>
+        <div> <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                  </div>
+                </div>
+        </div>
+
+        <hr>
+        
+        <a href="homepage.html" class="cancel.btn">Cancel</a>
+        <a href="loginhomepage.html" class="register.btn">Register</a>
+      </div>
+
+      <div class="container signin">
+        <p>Already have an account? <a href="LogIn.html">Sign in</a>.</p> <!--INSERT LINK-->
+      </div>
+    </form>
+
+  </body>
+</html>

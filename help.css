@@ -1,0 +1,50 @@
+/* This is for the background of the title */
+h1 {
+    background-color: #f9cb9c;
+    padding: 5px;
+    text-align: center;
+    }
+    /* This is for the navigation bar */
+    /* Style the top navigation bar */
+.topnav {
+    /* overflow: hidden; */
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Style the content
+.content {
+    background-color: #f3e6ff;
+    padding: 100px; */
+}
+
+h2 {
+  background: #333;
+  color: #ffffff;
+  font-family: Georgia;
+  text-align: center;
+  float: left;
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+}
+
+h3 {
+  float: left;
+}

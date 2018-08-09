@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="inventory.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="inventory.js"></script>
+  </head>
+  <body>
+    <!--book names and filters-->
+<div class="topnav">
+  <img src="C:\Users\Student 9\Desktop\janeene.gwc\BookieRookie.jpg" style="width:90px;height:55px;" id="logo" />
+  <a href="homepage.html">Return to home page</a>
+  <div class="clearfix"></div>
+</div>
+
+    <div class="header">
+      <h1>Inventory</h1>
+    </div>
+    <div class="marginnumber1">
+      <center><h2>Genres:</h2></center>
+        <ul style="list-style-type:disc">
+          <!--button/filter names-->
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <p><button class="btn" onclick="filterSelection('classics')"> Classics</button></p>
+             <p><button class="btn" onclick="filterSelection('comics')"> Comics</button></p>
+            <p><button class="btn" onclick="filterSelection('fiction')"> Fiction</button></p>
+            <p><button class="btn" onclick="filterSelection('mystery')"> Mystery</button></p>
+            <p><button class="btn" onclick="filterSelection('nonfic')"> Nonfiction</button></p>
+            <p><button class="btn" onclick="filterSelection('romance')"> Romance</button></p>
+            <p><button class="btn" onclick="filterSelection('scifi')">Science Fiction</button></p>
+            <p><button class="btn" onclick="filterSelection('YA')"> Young Adult</button></p>
+          </div>
+        </ul>
+    </div>
+    <div class="container">
+      <div class="filterDiv classics"><a href="https://www.goodreads.com/book/show/4671.The_Great_Gatsby">
+            <img border="0" alt="The Great Gatsby" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\gg.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv classics"><a href="https://www.goodreads.com/book/show/7613.Animal_Farm">
+            <img border="0" alt="Animal Farm" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\animal_farm_cover2014-485x800.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv classics"><a href="https://www.goodreads.com/book/show/40961427-1984 ">
+            <img border="0" alt="1984" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\514CVwOrybL._SX333_BO1,204,203,200_.jpg" width="85" height="130">
+            </a></div>
+
+
+      <div class="filterDiv comics"><a href="https://www.goodreads.com/book/show/39965099-still-just-kidding">
+            <img border="0" alt="Still Just Kidding" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\sjk.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv comics"><a href="https://www.goodreads.com/book/show/62953.Ghost_World">
+            <img border="0" alt="Ghost World" src="http://karakarga.com/wp-content/uploads/2016/06/yayinlar-ghost-world-kapak.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv comics"><a href=" https://www.goodreads.com/book/show/472331.Watchmen">
+            <img border="0" alt="Watchmen" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\41chVzBhJiL._SX317_BO1,204,203,200_.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv comics"><a href="https://www.goodreads.com/book/show/96358.Batman">
+            <img border="0" alt="Batman:The Killing Joke" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\61z2HFmt6TL.jpg" width="85" height="130">
+            </a></div>
+
+
+      <div class="filterDiv fiction"><a href=" https://www.goodreads.com/book/show/19486412-big-little-lies">
+            <img border="0" alt="Big Little Lies" src="https://images.penguinrandomhouse.com/cover/9780425274866" width="85" height="130">
+            </a></div>
+      <div class="filterDiv fiction"><a href="https://www.goodreads.com/book/show/29569206-give-me-your-hand">
+            <img border="0" alt="Give Me Your Hand" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\29569206.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv fiction"><a href="https://www.goodreads.com/book/show/40656712-rabbit-run?rto=x_gr_w_carousel_bp">
+            <img border="0" alt="Rabbit, Run" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\85386.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv fiction"><a href=" https://www.goodreads.com/book/show/19217165-jailbird?rto=x_gr_w_carousel_bp">
+            <img border="0" alt="Jailbird" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\4987.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv fiction"><a href="https://www.goodreads.com/book/show/5907.The_Hobbit">
+            <img border="0" alt="The Hobbit" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\91b0C2YNSrL.jpg" width="85" height="130">
+            </a></div>
+
+
+      <div class="filterDiv mystery"><a href="https://www.goodreads.com/book/show/16299.And_Then_There_Were_None">
+            <img border="0" alt="And Then There Were None" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\51MlxNgCsyL._SX308_BO1,204,203,200_.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv mystery"><a href="https://www.goodreads.com/book/show/22557272-the-girl-on-the-train">
+            <img border="0" alt="The Girl on the Train" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\9780735219755.jpeg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv mystery"><a href="https://www.goodreads.com/book/show/968.The_Da_Vinci_Code">
+            <img border="0" alt="The Da Vinci Code" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\220px-DaVinciCode.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv mystery"><a href="https://www.goodreads.com/book/show/29569206-give-me-your-hand">
+          <img border="0" alt="Give Me Your Hand" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\gmyh.jpg" width="85" height="130">
+          </a></div>
+
+
+      <div class="filterDiv nonfic"><a href="https://www.goodreads.com/book/show/29780253-born-a-crime">
+            <img border="0" alt="Born a Crime: Stories From a South African Childhood" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\51v55L2fxfL.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv nonfic"><a href="https://www.goodreads.com/book/show/1617.Night">
+            <img border="0" alt="Night" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\41kkT0WKkXL._SX310_BO1,204,203,200_.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv nonfic"><a href="https://www.goodreads.com/book/show/2612.The_Tipping_Pointe">
+            <img border="0" alt="The Tipping Point: How Little Things Can Make a Big Difference" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\2612.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv nonfic"><a href="https://www.goodreads.com/book/show/1845.Into_the_Wild">
+            <img border="0" alt="Into the Wild" src="https://www.scholastic.com/content5/media/products/04/9780385486804_mres.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv nonfic"><a href="https://www.goodreads.com/book/show/48855.The_Diary_of_a_Young_Girl">
+            <img border="0" alt="The Diary of a Young Girl" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\tdoayg.jpg" width="85" height="130">
+            </a></div>
+
+
+      <div class="filterDiv romance"><a href="https://www.goodreads.com/book/show/41865.Twilight?from_search=true ">
+            <img border="0" alt="Twilight" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\41K99+cInvL._SX326_BO1,204,203,200_.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv romance"><a href="https://www.goodreads.com/book/show/36569489-cottage-by-the-sea ">
+            <img border="0" alt="Cottage by the Sea" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\download.jpeg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv romance"><a href="https://www.goodreads.com/book/show/35720690-heart-of-thorns ">
+            <img border="0" alt="Heart of Thorns" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\35720690.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv romance"><a href="https://www.goodreads.com/book/show/4671.The_Great_Gatsby">
+            <img border="0" alt="The Great Gatsby" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\gg.jpg" width="85" height="130">
+            </a></div>
+
+
+      <div class="filterDiv scifi"><a href="https://www.goodreads.com/book/show/36332136-the-mere-wife ">
+            <img border="0" alt="The Mere Wife" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\51Y-L0xHT7L._SX329_BO1,204,203,200_.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv scifi"><a href="https://www.goodreads.com/book/show/35795943-the-supervillain-and-me ">
+            <img border="0" alt="The Supervillain and Me" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\35795943.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv scifi"><a href="https://www.goodreads.com/book/show/35068650-contagion ">
+            <img border="0" alt="Contagion" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\51RBWTlxFOL._SX328_BO1,204,203,200_.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv scifi"><a href="https://www.goodreads.com/book/show/33080122-the-calculating-stars">
+            <img border="0" alt="The Calculating Stars" src="https://images.gr-assets.com/books/1522037588l/33080122.jpg" width="85" height="130">
+            </a></div>
+
+
+
+      <div class="filterDiv YA"><a href="https://www.goodreads.com/book/show/16068905-fangirl">
+            <img border="0" alt="Fangirl" src="https://images-na.ssl-images-amazon.com/images/I/41oPZchRKAL.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv YA"><a href="https://www.goodreads.com/book/show/15749186-to-all-the-boys-i-ve-loved-before?ac=1&from_search=true">
+            <img border="0" alt="To All the Boys I've Loved Before" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\220px-To_All_the_Boys_I've_Loved_Before_cover.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv YA"><a href="https://www.goodreads.com/book/show/11870085-the-fault-in-our-stars?from_search=true ">
+            <img border="0" alt="The Fault in Our Stars" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\200px-The_Fault_in_Our_Stars.jpg" width="85" height="130">
+            </a></div>
+      <div class="filterDiv YA"><a href=" https://www.goodreads.com/book/show/36576048-fawkes ">
+            <img border="0" alt="Fawkes" src="C:\Users\Student 9\Desktop\Janeene.girlswhocode\36576048.jpg" width="85" height="130">
+            </a></div>
+</div>
+
+<script>
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+  filterSelection("all");
+</script>
